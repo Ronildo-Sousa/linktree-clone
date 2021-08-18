@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Inertia\Inertia;
-use App\Models\Link;
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
 
-class AdminController extends Controller
+class LinkController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,10 +13,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $links = Auth::user()->links;
-        return Inertia::render('admin/Dashboard', [
-            'links' => $links
-        ]);
+        //
     }
 
     /**

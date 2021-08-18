@@ -6,7 +6,13 @@
 
 <script>
 export default {
-    name: 'Dashboard'
+    name: 'Dashboard',
+    props: {
+      links: Object
+    },
+    mounted(){
+      console.log(this.links)
+    }
 }
 </script>
 
