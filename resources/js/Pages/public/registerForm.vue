@@ -16,16 +16,16 @@
           <p class="text-gray-600">Free forever. No payment needed.</p>
         </div>
         <div class="flex flex-col">
-          <input @keyup="clearErrors()" type="text" name="full_name" :class="errors.full_name ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="Full Name" v-model="form.full_name">
+          <input @keyup="clearErrors()" type="text" name="full_name" :class="errors.full_name ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="Fullname" v-model="form.full_name">
           <small v-if="errors.full_name" class="text-red-500 mb-5 ml-3">{{ errors.full_name }}</small>
 
-          <input @keyup="clearErrors()" type="text" name="user_name" :class="errors.user_name ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="User Name" v-model="form.user_name">
+          <input @keyup="clearErrors()" type="text" name="user_name" :class="errors.user_name ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="Username" v-model="form.user_name">
           <small v-if="errors.user_name" class="text-red-500 mb-5 ml-3">{{ errors.user_name }}</small>
 
-          <input @keyup="clearErrors" type="email" name="email" :class="errors.email ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="email" v-model="form.email">
+          <input @keyup="clearErrors" type="email" name="email" :class="errors.email ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="Email" v-model="form.email">
           <small v-if="errors.email" class="text-red-500 mb-5 ml-3">{{ errors.email }}</small>
 
-          <input @keyup="clearErrors" type="password" name="password" :class="errors.password ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="password" v-model="form.password">
+          <input @keyup="clearErrors" type="password" name="password" :class="errors.password ? '' : 'mb-5'" class="p-3 bg-gray-100 rounded" placeholder="Password" v-model="form.password">
           <small v-if="errors.password" class="text-red-500 mb-5 ml-3">{{ errors.password }}</small>
 
           <div class="flex items-center mb-6 mt-8">
@@ -36,7 +36,7 @@
         </div>
       </form>
       <div class="text-center mt-10 p-2 pb-6 text-sm  text-gray-600 md:border-t-2 md:border-gray-300">
-        <a href="#">Already have an account ?</a>
+        <a :href="route('auth.login')">Already have an account ?</a>
       </div>
     </div>
   </section>

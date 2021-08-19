@@ -41,7 +41,7 @@ class AuthController extends Controller
         if ($callback === true) {
             return Redirect::route('admin.index');
         }
-        return Redirect::back()->withErrors(['errors'=> 'wrong data.']);
+        return Redirect::back()->withErrors(['errors'=> 'error to create  user.']);
     }
 
     public function login(LoginRequest $request)
@@ -49,6 +49,6 @@ class AuthController extends Controller
         if($this->repository->auth($request->validated())){
             return Redirect::route('admin.index');
         }
-        return Redirect::back();
+        return Redirect::back()->withErrors(['credentials'=> 'wrong credentials.']);
     }
 }
