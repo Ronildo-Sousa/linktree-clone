@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use App\Models\Link;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class AdminController extends Controller
 {
@@ -23,15 +24,6 @@ class AdminController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -41,7 +33,14 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $link = Link::create([
+            'placeholder' => $request->placeholder,
+            'url' => $request->url,
+            'user_id' => Auth::user()->id,
+            'num_views' => 0
+        ]);
+
+        return Redirect::route('admin.index');
     }
 
     /**
