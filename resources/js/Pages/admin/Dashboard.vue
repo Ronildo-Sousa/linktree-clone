@@ -4,7 +4,7 @@
 
       <LinkArea class="w-full h-screen overflow-y-scroll" :links="links" />
 
-      <LinkDetails class="w-10/12" />
+      <LinkDetails class="w-8/12"  :links="active_links" :user="user" />
   </section>
 </template>
 
@@ -17,10 +17,9 @@ export default {
   components: { SideMenu, LinkArea, LinkDetails },
     name: 'Dashboard',
     props: {
-      links: Object
-    },
-    mounted(){
-      console.log(this.links)
+      links: Object,
+      active_links: Object,
+      user: Object,
     }
 }
 </script>

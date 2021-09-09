@@ -37,11 +37,6 @@ export default {
   props: {
     links: Object,
     user: String,
-  },
-  methods: {
-      handleLink(event){
-
-      }
-  },
+  }
 };
 </script>

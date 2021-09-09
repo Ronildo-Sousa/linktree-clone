@@ -14,18 +14,22 @@ class AdminController extends Controller
     public function index()
     {
         $links = Link::where('user_id', Auth::user()->id)->orderBy('created_at', 'desc')->get();
+        $activeLinks = Link::where('user_id', Auth::user()->id)->where('is_active', 1)->orderBy('created_at', 'desc')->get();
 
         return Inertia::render('admin/Dashboard', [
-            'links' => $links
+            'links' => $links,
+            'user' => Auth::user(),
+            'active_links' => $activeLinks
         ]);
     }
 
     public function links($name)
     {
         $user = User::where('user_name', $name)->first();
+        $activeLinks = Link::where('user_id', $user->id)->where('is_active', 1)->orderBy('created_at', 'desc')->get();
         if($user) {
             return Inertia::render('components/LinkTree', [
-                'links' => $user->links,
+                'links' => $activeLinks,
                 'user' => $user->user_name
             ]);
         }
