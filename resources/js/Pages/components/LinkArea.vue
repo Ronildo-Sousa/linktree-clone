@@ -20,16 +20,20 @@
      </div>
      <div class="flex flex-col justify-center items-center bg-gray-200">
          <NewLink />
+         <LinkItem v-for="link in links" :data="link" :key="link.id" />
      </div>
   </div>
 </template>
 
 <script>
 import NewLink from './NewLink';
-
+import LinkItem from './LinkItem';
 
 export default {
     name: 'LinkArea',
-    components: {NewLink}
+    components: {NewLink, LinkItem},
+    props: {
+        links: Object
+    }
 }
 </script>

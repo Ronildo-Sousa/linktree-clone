@@ -2,7 +2,7 @@
   <section class="flex">
       <SideMenu  />
 
-      <LinkArea class="w-full" />
+      <LinkArea class="w-full h-screen overflow-y-scroll" :links="links" />
 
       <LinkDetails class="w-10/12" />
   </section>

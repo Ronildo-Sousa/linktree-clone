@@ -39,7 +39,8 @@ export default {
         },
         save(){
             if(this.isFill()){
-                this.$inertia.post(route('admin.store', this.form))
+                this.$inertia.post(route('admin.store', this.form));
+                this.$emit('closeForm')
             }
         }
     },

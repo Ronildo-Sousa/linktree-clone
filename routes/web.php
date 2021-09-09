@@ -14,6 +14,8 @@ Route::get('/login', [AuthController::class, 'loginForm'])->name('auth.loginForm
 Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
 Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
 
+Route::get('user/{name}',[AdminController::class, 'links'])->name('links');
+
 Route::middleware(['auth'])->group(function(){
     Route::resource('admin', AdminController::class);
 });
