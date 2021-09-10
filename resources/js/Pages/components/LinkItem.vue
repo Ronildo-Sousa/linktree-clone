@@ -15,8 +15,9 @@
     <div class="ml-2 mt-3">
       <div class="flex justify-between  mb-3" style="width: 550px">
         <p class="font-medium">{{ data.placeholder }}</p>
-        <div>
-            <SwitchButton :isActiveItem="data.is_active" />
+        <div @click="switchLink">
+            <SwitchButton
+             :isActiveItem="data.is_active" />
         </div>
       </div>
 
@@ -44,6 +45,9 @@ export default {
   methods: {
       deleteLink(){
           this.$inertia.delete(route('admin.destroy', this.data))
+      },
+      switchLink(){
+          this.$inertia.put(route('admin.update', this.data))
       }
   },
 };

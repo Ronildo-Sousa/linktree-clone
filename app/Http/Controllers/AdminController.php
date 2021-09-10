@@ -48,9 +48,13 @@ class AdminController extends Controller
         return Redirect::route('admin.index');
     }
 
-    public function edit($id)
+    public function update($id)
     {
-        //
+        $link = Link::find($id);
+        $link->is_active = !$link->is_active;
+        $link->save();
+
+        return Redirect::route('admin.index');
     }
 
     public function destroy($id)

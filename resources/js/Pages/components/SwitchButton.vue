@@ -22,7 +22,7 @@ export default {
     name: 'SwitchButton',
     props: {
         isActiveItem: Boolean
-    }
+    },
 }
 </script>
 
