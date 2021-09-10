@@ -55,6 +55,8 @@ class AdminController extends Controller
 
     public function destroy($id)
     {
-        //
+        Link::find($id)->delete();
+
+        return Redirect::route('admin.index');
     }
 }

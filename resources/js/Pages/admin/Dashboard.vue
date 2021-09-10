@@ -1,10 +1,10 @@
 <template>
   <section class="flex">
-      <SideMenu  />
+      <!-- <SideMenu  /> -->
 
       <LinkArea class="w-full h-screen overflow-y-scroll" :links="links" />
 
-      <LinkDetails class="w-8/12"  :links="active_links" :user="user" />
+      <!-- <LinkDetails class="w-8/12"  :links="active_links" :user="user" /> -->
   </section>
 </template>
 

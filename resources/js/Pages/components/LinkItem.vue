@@ -21,7 +21,9 @@
       </div>
 
       <p>{{ data.url }}</p>
-      <div class="w-full mt-4 text-right text-gray-400">
+      <div
+      @click="deleteLink"
+      class="w-full mt-4 text-right cursor-pointer text-gray-400 hover:text-red-500">
         <i class="fa fa-trash"></i>
       </div>
     </div>
@@ -39,6 +41,10 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+      deleteLink(){
+          this.$inertia.delete(route('admin.destroy', this.data))
+      }
+  },
 };
 </script>
