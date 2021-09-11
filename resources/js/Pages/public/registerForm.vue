@@ -1,12 +1,14 @@
 <template>
   <section class="grid grid-cols-1 sm:grid-cols-3">
     <div class="h-20  sm:h-screen  overflow-hidden">
-      <img class="sm:w-full sm:h-full object-cover" src="https://images.ctfassets.net/9018yy2heipq/34xwDRZIMgGLw3M3EpV7My/b8df71455f6541d373ce0fb9c28d24ef/01-Create-Account-1920x1920.png?w=1440&fm=webp" alt="linktree" />
+      <a :href="route('home')">
+          <img class="sm:w-full sm:h-full object-cover" src="https://images.ctfassets.net/9018yy2heipq/34xwDRZIMgGLw3M3EpV7My/b8df71455f6541d373ce0fb9c28d24ef/01-Create-Account-1920x1920.png?w=1440&fm=webp" alt="linktree" />
+      </a>
     </div>
 
     <div class="p-5 h-screen sm:overflow-scroll sm:col-span-2 sm:order-first">
         <div class="hidden sm:block ml-10  mb-10">
-            <a href="#">
+            <a :href="route('home')">
                 <img style="width: 100px" src="https://logodownload.org/wp-content/uploads/2019/09/linktree-logo.png" alt="logo">
             </a>
         </div>
@@ -51,10 +53,10 @@ export default {
   data() {
       return {
           form: {
-              full_name: 'ronildo',
-              user_name: 'r0nildo',
-              email: 'ronildo@email.com',
-              password: '123'
+              full_name: '',
+              user_name: '',
+              email: '',
+              password: ''
           }
       }
   },

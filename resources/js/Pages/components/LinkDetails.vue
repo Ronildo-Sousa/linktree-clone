@@ -3,7 +3,7 @@
     <div class="flex justify-between p-3 border border-gray-300">
       <p>
         <strong>My Linktree: </strong>
-        <a href="#" class="underline">https://127.0.0.1/user/{{user.user_name }}</a>
+        <a :href="appUrl+user.user_name" target="_blank" class="underline">{{ appUrl }}{{user.user_name }}</a>
       </p>
       <button class="border border-gray-300 p-1 rounded-md">share</button>
     </div>
@@ -45,6 +45,11 @@ import ButtonSlot from './ButtonSlot.vue';
 export default {
     name: "LinkDetails",
   components: { ButtonSlot },
+  data() {
+      return {
+          appUrl: 'http://127.0.0.1:8000/user/'
+      }
+  },
   props: {
       links: Object,
       user: Object,
