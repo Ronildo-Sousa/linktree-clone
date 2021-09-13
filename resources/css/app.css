@@ -7,7 +7,11 @@
     right: 0;
     border-color: #68d391;
   }
-  .toggle-checkbox:checked + .toggle-label {
+.toggle-checkbox:checked + .toggle-label {
     @apply: bg-green-400;
     background-color: #68d391;
   }
+
+.dropdown-container:hover .dropdown-menu {
+    visibility: inherit;
+}

@@ -35,7 +35,8 @@ export default {
     name: 'LinkArea',
     components: {NewLink, LinkItem},
     props: {
-        links: Object
+        links: Object,
+        user_name: String
     }
 }
 </script>

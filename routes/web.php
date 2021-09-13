@@ -13,6 +13,7 @@ Route::get('/register', [AuthController::class, 'registerForm'])->name('auth.reg
 Route::get('/login', [AuthController::class, 'loginForm'])->name('auth.loginForm');
 Route::post('/register', [AuthController::class, 'register'])->name('auth.register');
 Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
+Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
 Route::get('user/{name}',[AdminController::class, 'links'])->name('links');
 

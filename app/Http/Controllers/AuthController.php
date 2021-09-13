@@ -51,4 +51,11 @@ class AuthController extends Controller
         }
         return Redirect::back()->withErrors(['credentials'=> 'wrong credentials.']);
     }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        return Redirect::route('home');
+    }
 }
