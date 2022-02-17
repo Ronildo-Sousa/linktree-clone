@@ -21,4 +21,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Link::class);
     }
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attibutes['password'] = bcrypt($value);
+    }
 }
