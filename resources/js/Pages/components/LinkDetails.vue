@@ -47,7 +47,7 @@ export default {
   components: { ButtonSlot },
   data() {
       return {
-          appUrl: this.$inertia.page.props.appName + '/user/',
+          appUrl: 'http://link3-clone.herokuapp.com/user/',
       }
   },
   props: {
