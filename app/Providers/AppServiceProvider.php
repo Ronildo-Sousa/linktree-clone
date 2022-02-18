@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Repositories\AuthRepository;
+use Inertia\Inertia;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(AuthRepository::class, AuthRepository::class);
+        Inertia::share('appName', config('app.url'));
     }
 
     /**
@@ -24,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+      
     }
 }

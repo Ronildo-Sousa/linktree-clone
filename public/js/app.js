@@ -19154,7 +19154,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      appUrl: 'http://127.0.0.1:8000/user/'
+      appUrl: this.$inertia.page.props.appName + '/user/'
     };
   },
   props: {
@@ -19890,7 +19890,7 @@ var _hoisted_1 = {
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "\n        w-5\n        flex\n        items-center\n        justify-center\n        p-1\n        border-r-2 border-r-gray-300\n      "
+  "class": "\r\n        w-5\r\n        flex\r\n        items-center\r\n        justify-center\r\n        p-1\r\n        border-r-2 border-r-gray-300\r\n      "
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "fas fa-ellipsis-v fa-lg mr-3 text-gray-400"
 })], -1
@@ -20083,7 +20083,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "\n      w-screen\n      md:w-16\n      md:h-screen\n      flex\n      md:flex-col\n      justify-between\n      items-center\n      p-2\n      border border-gray-300\n    "
+  "class": "\r\n      w-screen\r\n      md:w-16\r\n      md:h-screen\r\n      flex\r\n      md:flex-col\r\n      justify-between\r\n      items-center\r\n      p-2\r\n      border border-gray-300\r\n    "
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -20100,7 +20100,7 @@ var _hoisted_3 = {
 };
 
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "\n          w-20\n          flex\n          justify-between\n          items-center\n          md:w-full\n          md:h-16\n          md:flex-col\n        "
+  "class": "\r\n          w-20\r\n          flex\r\n          justify-between\r\n          items-center\r\n          md:w-full\r\n          md:h-16\r\n          md:flex-col\r\n        "
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "far fa-comment-alt fa-lg text-gray-300"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
@@ -20124,14 +20124,14 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 var _hoisted_7 = {
-  "class": "\n          dropdown-menu\n          invisible\n            absolute\n            w-80\n            h-56\n            p-3\n            -mt-44\n            ml-12\n            flex flex-col\n            justify-between\n            rounded-sm\n            bg-white\n            shadow-2xl\n          ",
+  "class": "\r\n          dropdown-menu\r\n          invisible\r\n            absolute\r\n            w-80\r\n            h-56\r\n            p-3\r\n            -mt-44\r\n            ml-12\r\n            flex flex-col\r\n            justify-between\r\n            rounded-sm\r\n            bg-white\r\n            shadow-2xl\r\n          ",
   style: {
     "margin-top": "-210px"
   }
 };
 
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "\n              font-medium\n              text-gray-600\n              p-2\n              cursor-pointer\n              rounded\n              hover:bg-gray-100\n              hover:text-purple-500\n            "
+  "class": "\r\n              font-medium\r\n              text-gray-600\r\n              p-2\r\n              cursor-pointer\r\n              rounded\r\n              hover:bg-gray-100\r\n              hover:text-purple-500\r\n            "
 }, " My Account ", -1
 /* HOISTED */
 );
@@ -20143,7 +20143,7 @@ var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 var _hoisted_10 = {
-  "class": "\n              flex\n              justify-between\n              items-center\n              p-2\n              cursor-pointer\n              rounded-md\n              text-lg\n            ",
+  "class": "\r\n              flex\r\n              justify-between\r\n              items-center\r\n              p-2\r\n              cursor-pointer\r\n              rounded-md\r\n              text-lg\r\n            ",
   style: {
     "background": "#05e876"
   }
@@ -20160,7 +20160,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function () {
       return $options.logout && $options.logout.apply($options, arguments);
     }),
-    "class": "\n              font-medium\n              text-gray-600\n              p-2\n              cursor-pointer\n              rounded\n              hover:bg-gray-100\n              hover:text-purple-500\n            "
+    "class": "\r\n              font-medium\r\n              text-gray-600\r\n              p-2\r\n              cursor-pointer\r\n              rounded\r\n              hover:bg-gray-100\r\n              hover:text-purple-500\r\n            "
   }, " Logout "), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "@" + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.user_name), 1
   /* TEXT */
   ), _hoisted_11])])])])]);
@@ -20279,7 +20279,7 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 
 var _hoisted_7 = {
   key: 0,
-  "class": "\n            bg-red-400\n            text-white text-center\n            rounded\n            p-2\n            font-medium\n            mb-5\n            -mt-5\n          "
+  "class": "\r\n            bg-red-400\r\n            text-white text-center\r\n            rounded\r\n            p-2\r\n            font-medium\r\n            mb-5\r\n            -mt-5\r\n          "
 };
 var _hoisted_8 = {
   key: 1,
@@ -20316,7 +20316,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onSubmit: _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.submit && $options.submit.apply($options, arguments);
     }, ["prevent"])),
-    "class": "\n          flex flex-col\n          p-4\n          sm:p-16\n          sm:rounded-xl\n          sm:border sm:border-gray-300\n        "
+    "class": "\r\n          flex flex-col\r\n          p-4\r\n          sm:p-16\r\n          sm:rounded-xl\r\n          sm:border sm:border-gray-300\r\n        "
   }, [_hoisted_6, $props.errors.credentials ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.errors.credentials), 1
   /* TEXT */
   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {

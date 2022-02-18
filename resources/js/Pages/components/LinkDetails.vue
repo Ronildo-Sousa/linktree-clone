@@ -47,7 +47,7 @@ export default {
   components: { ButtonSlot },
   data() {
       return {
-          appUrl: 'http://127.0.0.1:8000/user/'
+          appUrl: this.$inertia.page.props.appName + '/user/',
       }
   },
   props: {
